@@ -9,5 +9,4 @@ class GoldService {
     // onValue mengembalikan stream yang mendengarkan perubahan data
     return _database.onValue;
   }
-
 }
