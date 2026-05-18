@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.VIBRATE"/>    
     <application
         android:label="notes"
         android:name="${applicationName}"
@@ -42,4 +45,20 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
+</manifest>
+<manifest ...>
+    ...
+    <application ...>
+        <!-- Matikan Impeller jika aplikasi Force Close di HP tertentu -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="false" />
+
+        <!-- Set Default Channel ID untuk FCM -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="high_importance_channel" />
+        
+        ...
+    </application>
 </manifest>
