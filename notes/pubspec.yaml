@@ -9,12 +9,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:   
+    sdk: flutter
+  intl: any                
   firebase_core: ^4.7.0
   cloud_firestore: ^6.3.0
   image_picker: ^1.1.2
   firebase_messaging: ^16.2.2
   flutter_local_notifications: ^21.0.0
   http: ^1.6.0
+  shared_preferences: ^2.5.5
 
 flutter:
+  generate: true 
   uses-material-design: true
